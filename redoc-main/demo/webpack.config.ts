@@ -28,7 +28,7 @@ export default (env: { playground?: boolean; bench?: boolean } = {}) => ({
   target: 'web',
   output: {
     filename: 'redoc-demo.bundle.js',
-    path: root('dist'),
+    path: root('build'), 
     globalObject: 'this',
   },
 
@@ -105,7 +105,8 @@ export default (env: { playground?: boolean; bench?: boolean } = {}) => ({
         ? 'demo/playground/index.html'
         : env.bench
         ? 'benchmark/index.html'
-        : 'demo/index.html',
+        : 'demo/index.html', // Kaynak HTML dosyası
+      filename: 'index.html', // Çıkış dosyası
     }),
     new webpack.ProvidePlugin({
       Buffer: ['buffer', 'Buffer'],
