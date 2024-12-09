@@ -5,11 +5,11 @@ import { RedocStandalone } from '../src';
 import ComboBox from './ComboBox';
 import FileInput from './components/FileInput';
 
-const DEFAULT_SPEC = 'museum.yaml';
+const DEFAULT_SPEC = 'openapi-3-1.yaml';
 const NEW_VERSION_PETSTORE = 'openapi-3-1.yaml';
 
 const demos = [
-  { value: DEFAULT_SPEC, label: 'Museum API' },
+  { value: DEFAULT_SPEC, label: 'OpenAPI 3.1 Petstore' },
   { value: NEW_VERSION_PETSTORE, label: 'Petstore OpenAPI 3.1' },
   { value: 'https://api.apis.guru/v2/specs/instagram.com/1.0.0/swagger.yaml', label: 'Instagram' },
   {

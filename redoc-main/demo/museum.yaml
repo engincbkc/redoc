@@ -5,7 +5,7 @@ info:
   version: 1.0.0
   contact:
     email: team@redocly.com
-    url: 'https://redocly.com/docs/cli/'
+    url: 'https://dev-gateway.ziffy.app/swagger/index.html'
   x-logo:
     url: 'https://redocly.github.io/redoc/museum-logo.png'
     altText: Museum logo
@@ -13,7 +13,7 @@ info:
     name: MIT
     url: 'https://opensource.org/license/mit/ '
 servers:
-  - url: 'https://api.fake-museum-example.com/v1'
+  - url: 'https://dev-gateway.ziffy.app/swagger/index.html'
 paths:
   /museum-hours:
     get:
