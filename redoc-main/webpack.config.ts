@@ -41,7 +41,7 @@ export default (env: { standalone?: boolean; browser?: boolean } = {}) => ({
       : env.browser
       ? 'redoc.browser.lib.js'
       : 'redoc.lib.js',
-    path: path.join(__dirname, '/build'), // Vercel için "build" klasörüne çıkış yap
+    path: path.join(__dirname, '/bundles'),
     library: 'Redoc',
     libraryTarget: 'umd',
     globalObject: 'this',

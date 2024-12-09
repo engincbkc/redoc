@@ -1,7 +1,0 @@
-{
-    "builds": [
-      { "src": "webpack.config.ts", "use": "@vercel/static-build" }
-    ],
-    "outputDirectory": "build"
-  }
-  
