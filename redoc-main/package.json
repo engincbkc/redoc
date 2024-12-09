@@ -52,6 +52,7 @@
     "lint": "eslint --fix 'src/**/*.{js,ts,tsx}' --cache",
     "benchmark": "node ./benchmark/benchmark.js",
     "start:demo": "webpack serve --hot --config demo/webpack.config.ts --mode=development",
+     "build": "webpack --mode production",
     "build:demo": "webpack --mode=production --config demo/webpack.config.ts",
     "publish-cdn": "scripts/publish-cdn.sh",
     "deploy:demo": "aws s3 sync demo/dist s3://production-redoc-demo --acl=public-read",

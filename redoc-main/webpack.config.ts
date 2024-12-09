@@ -41,11 +41,12 @@ export default (env: { standalone?: boolean; browser?: boolean } = {}) => ({
       : env.browser
       ? 'redoc.browser.lib.js'
       : 'redoc.lib.js',
-    path: path.join(__dirname, '/bundles'),
+    path: path.join(__dirname, '/build'), // Vercel için "build" klasörüne çıkış yap
     library: 'Redoc',
     libraryTarget: 'umd',
     globalObject: 'this',
   },
+  
   devtool: 'source-map',
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.mjs', '.json'],
